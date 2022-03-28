@@ -26,3 +26,7 @@ A sleek, aesthetic web page dedicated to collection and dispursing the best reci
     ## Getting Started
 
     - [Trello Board](https://trello.com/b/d3QTq3E3/recipe-central)
+
+    - [EDR](https://lucid.app/lucidchart/8644bc08-175f-49b9-8a1e-b9797d6f41c7/edit?invitationId=inv_59db1e33-0375-4e82-b54b-e4c4f7c88cb3)
+
+    - [Component Map](https://lucid.app/lucidchart/11e24f02-3c34-46e9-b771-5157e0455beb/edit?invitationId=inv_f2c740e7-fef3-4292-8186-4d3e0df37d02)
