@@ -9,12 +9,14 @@ const db = require('./db')
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
+app.use(express.static(`${__dirname}/client/build`))
 
 
 const recipesController = require('./controllers/recipesController');
 const { Recipe, Chef } = require('./models')
 // app.post('/recipes', recipesController.getBreakfast)
-app.get('/:meal', recipesController.getBreakfast)
+// app.get('/:meal', recipesController.getBreakfast)
+
 app.get('/breakfast', recipesController.getBreakfast)
 app.get('/lunch', recipesController.getLunch)
 app.get('/dinner', recipesController.getDinner)
@@ -36,5 +38,7 @@ app.post('/recipes', (req, res) => {
 
 
 
-
+app.get('/*', (req, res) => {
+    res.sendFile(`${__dirname}/client/build/index.html`)
+   })
 app.listen(PORT, () => console.log(`Listening on port ${PORT}` ))

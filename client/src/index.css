@@ -43,7 +43,32 @@ nav, nav:hover, nav:active, nav:visited, nav:link {
 
   background-color: rgb(252, 253, 253);
   margin: 20px;
-  height:1000px;
+  height:auto;
 
 
 }
+
+.outer-container {
+display:grid;
+grid-template-columns: 1;
+grid-template-rows: auto;
+
+
+}
+
+.middle-container {
+  display:grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+
+
+}
+
+.inner-container{
+  display:grid;
+  grid-template-columns: 1;
+  grid-template-rows: 4;
+
+
+}
+

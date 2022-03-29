@@ -5,8 +5,8 @@ import axios from "axios";
 
 const Breakfast = () => {
 
-    const [recipes, setRecipes ] = useState()
-    let recipes1 = 0
+    const [recipes, setRecipes ] = useState([])
+    
 
     useEffect(() => {
 
@@ -14,7 +14,7 @@ const Breakfast = () => {
 
             let breakfastRecipes = await axios.get("http://localhost:3001/breakfast")
             setRecipes(breakfastRecipes.data)
-            console.log(recipes)
+            
             
 
         }
@@ -22,28 +22,29 @@ const Breakfast = () => {
         
 
     }, [])
-    console.log(recipes)
+   
 
 return (
     <div className="main-content outer-container">
 
         <h2>Breakfast</h2>
-        <div className=" middle-container">
+        
             {recipes.map((recipe) => (
+                <div className=" middle-container">
+                    <img className="recipe-img" src={recipe.img} alt="picture of recipe" />
                 
-                <div>
-                    <img src={recipe.img} alt="picture of recipe" />
-                    <h2>{recipe.name}</h2> 
-                    <p>Steps: {recipe.ingredients}</p>
-                    <p></p>
+                    <div className="inner-container">
+                        <h2 className="recipe-name">{recipe.name}</h2> 
+                        <p className="recipe-ing">Ingredients: {recipe.ingredients}</p>
+                        <p className="recipe-steps">Steps: {recipe.steps}</p>
+                        <p></p>
+                    </div>
                 </div>
 
-
-            
             ))}
 
 
-        </div>
+        
     
             
 
