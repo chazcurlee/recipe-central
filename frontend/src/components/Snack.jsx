@@ -5,8 +5,12 @@ import { useState, useEffect } from 'react'
 const Snack = () => {
 
 return (
+    <div className="main-content">
 
-    <p>Snack</p>
+        <p>Snack</p>
+
+    </div>
+    
 
 )
 

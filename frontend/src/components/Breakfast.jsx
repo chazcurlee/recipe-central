@@ -12,32 +12,44 @@ const Breakfast = () => {
 
         const getRecipes = async () => {
 
-            let breakfastRecipes = await axios.get("http://localhost:3001/recipes")
-            setRecipes(breakfastRecipes)
+            let breakfastRecipes = await axios.get("http://localhost:3001/breakfast")
+            setRecipes(breakfastRecipes.data)
+            console.log(recipes)
             
 
         }
-
+        getRecipes()
         
 
     }, [])
     console.log(recipes)
 
 return (
-    <div>
+    <div className="main-content outer-container">
 
         <h2>Breakfast</h2>
-        <ul>
-            {/* {recipes.map((recipe) => (
+        <div className=" middle-container">
+            {recipes.map((recipe) => (
+                
+                <div>
+                    <img src={recipe.img} alt="picture of recipe" />
+                    <h2>{recipe.name}</h2> 
+                    <p>Steps: {recipe.ingredients}</p>
+                    <p></p>
+                </div>
 
-                <h3>{recipe.name}</h3>
 
-            )
-            )} */}
-
+            
+            ))}
 
 
-        </ul>   
+        </div>
+    
+            
+
+
+
+         
 
     </div>
   

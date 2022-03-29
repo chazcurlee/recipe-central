@@ -10,6 +10,7 @@ const Recipe = new Schema(
         steps: {type: String, required: true},
         category: {type: String, required: true},
         chef: [{ type: Schema.Types.ObjectId, ref: 'chefs', required: false}, ],
+        img: {type: String, required: true},
         
 
         

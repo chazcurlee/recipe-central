@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: false}))
 const recipesController = require('./controllers/recipesController');
 const { Recipe, Chef } = require('./models')
 // app.post('/recipes', recipesController.getBreakfast)
+app.get('/:meal', recipesController.getBreakfast)
 app.get('/breakfast', recipesController.getBreakfast)
 app.get('/lunch', recipesController.getLunch)
 app.get('/dinner', recipesController.getDinner)

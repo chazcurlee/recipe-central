@@ -5,8 +5,10 @@ import { useState, useEffect } from 'react'
 const Entry = () => {
 
 return (
-
-    <p>Entry</p>
+    <div className="main-content">
+        <p>Entry</p>
+    </div>
+    
 
 )
 

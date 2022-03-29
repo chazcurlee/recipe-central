@@ -6,7 +6,11 @@ const ChefsPage = () => {
 
 return (
 
-    <p>Chefs Page</p>
+    <div className="main-content">
+        <p>Chefs Page</p>
+
+    </div>
+    
 
 )
 

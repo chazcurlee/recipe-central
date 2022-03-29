@@ -5,8 +5,10 @@ import { useState, useEffect } from 'react'
 const Lunch = () => {
 
 return (
-
-    <p>Lunch</p>
+    <div className="main-content">
+        <p>Lunch</p>
+    </div>
+    
 
 )
 
