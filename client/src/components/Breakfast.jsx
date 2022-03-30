@@ -35,8 +35,9 @@ return (
                 
                     <div className="inner-container">
                         <h2 className="recipe-name">{recipe.name}</h2> 
-                        <p className="recipe-ing">Ingredients: {recipe.ingredients}</p>
-                        <p className="recipe-steps">Steps: {recipe.steps}</p>
+                        <p className="recipe-info">{recipe.description}</p>
+                        <p className="recipe-info">Ingredients: {recipe.ingredients}</p>
+                        <p className="recipe-info">Steps: {recipe.steps}</p>
                         <p></p>
                     </div>
                 </div>

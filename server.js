@@ -28,12 +28,7 @@ app.get('/snack', recipesController.getSnack)
 
 // })
 
-app.post('/recipes', (req, res) => {
-
-    Chef.create(req.body)
-
-
-})
+app.post('/recipes', recipesController.addRecipe)
 
 
 

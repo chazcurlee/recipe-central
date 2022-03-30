@@ -52,6 +52,14 @@ const getSnack = async (req, res) => {
 
 }
 
+const addRecipe = async (req, res) => {
+
+    let inp = req.body
+    Recipe.create(inp)
+
+
+}
+
 
 
 
@@ -59,7 +67,8 @@ module.exports ={
     getBreakfast,
     getLunch,
     getDinner,
-    getSnack
+    getSnack,
+    addRecipe
 
 
 
