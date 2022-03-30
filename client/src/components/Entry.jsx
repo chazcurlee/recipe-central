@@ -26,9 +26,9 @@ const Entry = () => {
 
     const submitRecipe = async () => {
 
-        let category = 0
+        let category = cat.toLowerCase()
 
-        const inp = await axios.post(`http://localhost:3001/breakfast`)
+        const inp = await axios.post(`http://localhost:3001/${category}`)
 
 
 
@@ -39,7 +39,7 @@ const Entry = () => {
 return (
     <div className="main-content">
         <h2>Add A New Recipe Here</h2>
-        <form id="recipe-form">
+        <form id="recipe-form" onSubmit={submitRecipe}>
             <input type="text" placeholder="Recipe Name" id="name"/><br/>
             <input type="text" placeholder="Description" id="description"/><br/>
             <input type="text" placeholder="Ingredients" id="ingredients"/><br/>
@@ -53,13 +53,7 @@ return (
                 <option>Julia Child</option>
                 <option>Bobby Flay</option>
             </select><br/>
-            <select id="dropdown-cat" onChange="">
-                <option>---Choose Category---</option>
-                <option>Breakfast</option>
-                <option>Lunch</option>
-                <option>Dinner</option>
-                <option>Snack</option>
-            </select><br/>
+            
             <input type="submit"/>
 
 

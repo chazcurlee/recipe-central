@@ -16,7 +16,7 @@ const { Chef, Recipe } = require('../models')
 
 const getBreakfast = async (req, res) => {
 
-    let test = await Recipe.find({category: "Breakfast"})
+    let test = await Recipe.find({})
 
     res.json(test)
 
@@ -25,32 +25,11 @@ const getBreakfast = async (req, res) => {
 
 }
 
-const getLunch = async (req, res) => {
+const getChef = async (req, res) => {
 
-    let lunch = await Recipe.find({category: "Lunch"})
-    res.json(lunch)
+    let chef = await Chef.find({})
 
-
-
-}
-
-const getDinner = async (req, res) => {
-
-    let dinner = await Recipe.find({category: "Dinner"})
-    res.json(dinner)
-
-
-
-}
-
-const getSnack = async (req, res) => {
-
-    let snack = await Recipe.find({category: "Snack"})
-    res.json(snack)
-
-
-
-}
+} 
 
 const addRecipe = async (req, res) => {
 

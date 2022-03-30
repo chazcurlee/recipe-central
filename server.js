@@ -18,9 +18,7 @@ const { Recipe, Chef } = require('./models')
 // app.get('/:meal', recipesController.getBreakfast)
 
 app.get('/breakfast', recipesController.getBreakfast)
-app.get('/lunch', recipesController.getLunch)
-app.get('/dinner', recipesController.getDinner)
-app.get('/snack', recipesController.getSnack)
+
 // app.get('/recipes', async (req, res) => {
 
 //     let test = await Recipe.find({category: "Breakfast"})

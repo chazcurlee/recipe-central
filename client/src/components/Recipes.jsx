@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from "axios";
 
 
-const Breakfast = () => {
+const Recipes = () => {
 
     const [recipes, setRecipes ] = useState([])
     
@@ -62,4 +62,4 @@ return (
 
 }
 
-export default Breakfast
+export default Recipes
