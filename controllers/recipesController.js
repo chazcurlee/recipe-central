@@ -14,7 +14,7 @@ const { Chef, Recipe } = require('../models')
 
 // }
 
-const getBreakfast = async (req, res) => {
+const getRecipe = async (req, res) => {
 
     let test = await Recipe.find({})
 
@@ -43,10 +43,8 @@ const addRecipe = async (req, res) => {
 
 
 module.exports ={
-    getBreakfast,
-    getLunch,
-    getDinner,
-    getSnack,
+    getRecipe,
+    getChef,
     addRecipe
 
 

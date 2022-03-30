@@ -12,7 +12,7 @@ const Recipes = () => {
 
         const getRecipes = async () => {
 
-            let breakfastRecipes = await axios.get("http://localhost:3001/breakfast")
+            let breakfastRecipes = await axios.get("http://localhost:3001/recipe")
             setRecipes(breakfastRecipes.data)
             
             

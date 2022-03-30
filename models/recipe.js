@@ -4,12 +4,12 @@ const Recipe = new Schema(
 
     {
 
-        name: {type: String, required: true},
-        description: {type: String, required: true},
-        ingredients: {type: String, required: true},
-        steps: {type: String, required: true},
+        name: {type: String, },
+        description: {type: String, },
+        ingredients: {type: String, },
+        steps: {type: String, },
         chef: [{ type: Schema.Types.ObjectId, ref: 'chefs', required: false}, ],
-        img: {type: String, required: true},
+        img: {type: String, },
         
 
         
