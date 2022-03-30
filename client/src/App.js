@@ -4,11 +4,9 @@ import { Routes, Route } from 'react-router-dom'
 import Nav from "./components/Nav"
 import Home from './components/Home';
 import Recipes from './components/Recipes'
-import Lunch from './components/Lunch'
-import Dinner from './components/Dinner'
-import Snack from './components/Snack'
 import Entry from './components/Entry'
 import ChefsPage from './components/ChefsPage';
+import RecipeDetail from './components/RecipeDetail'
 
 function App() {
   return (
@@ -24,12 +22,11 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/breakfast" element={<Recipes />} />
-          {/* <Route path="lunch" element={<Lunch />} />
-          <Route path="dinner" element={<Dinner />} />
-          <Route path="snack" element={<Snack />} /> */}
+          <Route path="/recipe" element={<Recipes />} />
+          
           <Route path="recipe-entry" element={<Entry />} />
           <Route path="chefs-page" element={<ChefsPage />} /> 
+          <Route path="recipe/:id" element={<RecipeDetail />} />
         </Routes>
       </main>
      

@@ -51,7 +51,7 @@ nav, nav:hover, nav:active, nav:visited, nav:link {
 
   background-color: #ffd2ab;
   margin: 20px;
-  height: 100em;
+  height: auto;
   width: 98vw;
 
 
@@ -106,5 +106,14 @@ nav, nav:hover, nav:active, nav:visited, nav:link {
   margin: 0px;
 
 }
+
+.chef-portrait {
+
+  width: 30vw;
+  height: 50vh;
+
+}
+
+
 
 

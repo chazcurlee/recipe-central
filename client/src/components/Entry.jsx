@@ -50,10 +50,38 @@ const Entry = () => {
                 break;
                     
             case "dropdown-chef":
-                setNewRecipe({
-                    ...newRecipe,
-                    chef: update,
-                })
+                switch (update) {
+                    case "Gordon Ramsey":
+                        setNewRecipe({
+                            ...newRecipe,
+                            chef: "6244578a1f15f32c6e1f29e0",
+                        })
+                        break;
+
+                    case "Julia Child":
+                        setNewRecipe({
+                            ...newRecipe,
+                            chef: "6244578a1f15f32c6e1f29e3",
+                        })
+                        break;
+                    
+                    case "Bobby Flay":
+                        setNewRecipe({
+                            ...newRecipe,
+                            chef: "6244578a1f15f32c6e1f29e2",
+                        })
+                        break;
+
+                    case "Anthony Bourdain":
+                        setNewRecipe({
+                            ...newRecipe,
+                            chef: "6244578a1f15f32c6e1f29e1",
+                        })
+                        break;
+
+                }
+                    
+                
                 break;
                     
 
@@ -73,7 +101,19 @@ const Entry = () => {
 
         
         console.log(newRecipe)
-        await axios.post(`http://localhost:3001/recipe`, {newRecipe})
+        await axios.post(`http://localhost:3001/recipe`, {
+            name: newRecipe.name,
+            description: newRecipe.description,
+            img: newRecipe.img,
+            chef: newRecipe.chef,
+            steps: newRecipe.steps,
+            ingredients: newRecipe.ingredients
+
+
+
+
+
+        })
 
 
 

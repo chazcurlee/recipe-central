@@ -1,32 +1,26 @@
 import React from "react";
 import { useState, useEffect } from 'react'
-import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 
 
-const Recipes = () => {
+const RecipeDetail = () => {
 
-    const [recipes, setRecipes ] = useState([])
-    let navigate = useNavigate()
-
-    const showDetails = (recipe) => {
-
-        navigate(`${recipe.id}`)
-
-    }
+    const [recipe, setRecipe ] = useState([])
     
 
     useEffect(() => {
 
-        const getRecipes = async () => {
+        const getRecipe = async () => {
 
-            let breakfastRecipes = await axios.get("http://localhost:3001/recipe")
-            setRecipes(breakfastRecipes.data)
+            
+
+            let recipe = await axios.get("http://localhost:3001/recipe/")
+            setRecipe(recipe.data)
             
             
 
         }
-        getRecipes()
+        getRecipe()
         
 
     }, [])
@@ -35,10 +29,10 @@ const Recipes = () => {
 return (
     <div className="main-content outer-container">
 
-        <h2>Recipes</h2>
+        <h2>Recipe Detail</h2>
         
-            {recipes.map((recipe) => (
-                <div className=" middle-container" onClick={showDetails(recipe)}>
+            {recipe.map((recipe) => (
+                <div className=" middle-container">
                     <img className="recipe-img" src={recipe.img} alt="picture of recipe" />
                 
                     <div className="inner-container">
@@ -70,4 +64,4 @@ return (
 
 }
 
-export default Recipes
+export default RecipeDetail

@@ -13,10 +13,8 @@ return (
 
             
             <Link to="/" className="nav-butt"> Home </Link>
-            <Link to="breakfast" className="nav-butt"> Recipes </Link>
-            {/* <Link to="lunch" className="nav-butt"> Lunch </Link>
-            <Link to="dinner" className="nav-butt"> Dinner </Link>
-            <Link to="snack" className="nav-butt"> Snack </Link> */}
+            <Link to="recipe" className="nav-butt"> Recipes </Link>
+            {/* <Link to="recipe/:id" className="nav-butt" />  */}
             <Link to="recipe-entry" className="nav-butt"> Recipe Entry </Link>
             <Link to="chefs-page" className="nav-butt"> Chefs' Pages </Link>
 

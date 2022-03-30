@@ -28,6 +28,7 @@ const getRecipe = async (req, res) => {
 const getChef = async (req, res) => {
 
     let chef = await Chef.find({})
+    res.json(chef)
 
 } 
 
