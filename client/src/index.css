@@ -12,9 +12,22 @@ code {
     monospace;
 }
 
-nav, nav:hover, nav:active, nav:visited, nav:link {
+a,  a:visited {
 
-  text-decoration: none;
+color:#231a31;
+text-decoration: none;
+
+}
+
+a:hover {
+
+  font-size: 20px;
+
+}
+
+a:active {
+
+  font-size: 15px;
 
 }
 
@@ -42,7 +55,7 @@ nav, nav:hover, nav:active, nav:visited, nav:link {
 
   padding: 0px 109px;
   margin: 0px;
-  border: 1px solid #231a31;
+  /* border: 1px solid #231a31; */
   
 
 }
