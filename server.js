@@ -23,6 +23,7 @@ app.get('/chef/:id', recipesController.getSpecChef)
 app.post('/recipe', recipesController.addRecipe)
 app.get('/recipe-detail/:id', recipesController.getDetailedRecipe)
 app.delete('/recipe-detail/:id', recipesController.deleteRecipe)
+app.put('/recipe-detail/:id', recipesController.updateRecipe)
 app.post('/recipe', recipesController.addRecipe)
 
 

@@ -23,9 +23,9 @@ const RecipeDetail = () => {
             setRecipe(recipe.data)
 
             let chefId = recipe.data.chef[0]
-            console.log(chefId)
+            
             let specChef = await axios.get(`http://localhost:3001/chef/${chefId}`)
-            console.log(specChef)
+            
             setChef(specChef.name)
             
             
@@ -41,8 +41,11 @@ const RecipeDetail = () => {
         
         let ans = prompt("Please type in the name of the recipe you are trying to delete.")
         if (ans === recipe.name) {
-            await navigate('/recipe', {replace: true}, {reloadDocument: true})
+            
             let dlte = await axios.delete(`/recipe-detail/${id}`)
+            console.log(dlte)
+            navigate('/recipe', {replace: true}, {reloadDocument: true})
+            
             
 
 
@@ -77,7 +80,7 @@ return (
                         <p className="recipe-info">Ingredients: {recipe.ingredients}</p>
                         <p className="recipe-info">Steps: {recipe.steps}</p>
                         <p className="recipe-info">Chef: {chef}</p>
-                        <button onCLick={editEntry}>Edit</button><br />
+                        <button onClick={editEntry}>Edit</button><br />
                         <button onClick={deleteEntry}>Delete</button>
                     </div>
                 </div>

@@ -1,10 +1,12 @@
 import React from "react";
 import { useState, useEffect } from 'react'
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 
 const Entry = () => {
     const [newRecipe, setNewRecipe] = useState({})
+    const navigate = useNavigate()
     
 
     const handleChange = (e) => {
@@ -101,7 +103,7 @@ const Entry = () => {
 
         
         console.log(newRecipe)
-        await axios.post(`http://localhost:3001/recipe`, {
+        let post = await axios.post(`http://localhost:3001/recipe`, {
             name: newRecipe.name,
             description: newRecipe.description,
             img: newRecipe.img,
@@ -114,8 +116,8 @@ const Entry = () => {
 
 
         })
-
-
+        console.log(post)
+        navigate('/recipe', {replace:true})
 
     }
 

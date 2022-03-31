@@ -49,6 +49,7 @@ const addRecipe = async (req, res) => {
     
     let inp = req.body
     Recipe.create(inp)
+    res.send("Recipe Added")
 
 
 }
@@ -67,13 +68,21 @@ const deleteRecipe = async (req, res) => {
     
         await Recipe.findByIdAndDelete(req.params.id)
         console.log(`Recipe deleted. ID: ${req.params.id}`)
+        res.send('Delete worked')
 
     
     
 
 }
 
+const updateRecipe = async (req, res) => {
 
+
+    await Recipe.findByIdAndUpdate(req.params.id, req.body)
+    res.send('Recipe Updated')
+
+
+}
 
 
 module.exports ={
@@ -82,7 +91,8 @@ module.exports ={
     addRecipe,
     getDetailedRecipe,
     deleteRecipe,
-    getSpecChef
+    getSpecChef,
+    updateRecipe
 
 
 
