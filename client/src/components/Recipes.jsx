@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from 'react'
-import { useFocusEffect} from '@react-navigation/native'
 import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 
@@ -18,8 +17,7 @@ const Recipes = () => {
     }
     
 
-    useFocusEffect(
-        React.useCallback(()=> {
+    useEffect(() => {
 
         const getRecipes = async () => {
 
@@ -32,7 +30,23 @@ const Recipes = () => {
         getRecipes()
         
 
-    }, []))
+    }, [])
+
+    // useFocusEffect(
+    //     React.useCallback(()=> {
+
+    //     const getRecipes = async () => {
+
+    //         let breakfastRecipes = await axios.get("http://localhost:3001/recipe")
+    //         setRecipes(breakfastRecipes.data)
+            
+            
+
+    //     }
+    //     getRecipes()
+        
+
+    // }, []))
    
 
 return (
