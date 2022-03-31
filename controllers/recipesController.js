@@ -78,7 +78,7 @@ const deleteRecipe = async (req, res) => {
 const updateRecipe = async (req, res) => {
 
 
-    await Recipe.findByIdAndUpdate(req.params.id, req.body)
+    await Recipe.findByIdAndUpdate(req.params.id, req.body, {new: true})
     res.send('Recipe Updated')
 
 

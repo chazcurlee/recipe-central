@@ -25,8 +25,8 @@ const RecipeDetail = () => {
             let chefId = recipe.data.chef[0]
             
             let specChef = await axios.get(`http://localhost:3001/chef/${chefId}`)
-            
-            setChef(specChef.name)
+            console.log(specChef.data.name)
+            setChef(specChef.data.name)
             
             
 

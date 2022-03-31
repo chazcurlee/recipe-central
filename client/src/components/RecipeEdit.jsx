@@ -21,11 +21,11 @@ const RecipeEdit = () => {
             
 
             let recipe = await axios.get(`http://localhost:3001/recipe-detail/${id}`)
-            console.log(recipe.data)
+            
             setRecipe(recipe.data)
 
             let chefId = recipe.data.chef[0]
-            console.log(chefId)
+            
             let specChef = await axios.get(`http://localhost:3001/chef/${chefId}`)
             console.log(specChef)
             setChef(specChef.name)
@@ -43,6 +43,8 @@ const RecipeEdit = () => {
     const handleChange = (e) => {
 
         let update = e.target.value
+
+        // setRecipe({ ...recipe, [e.target.name]: e.target.value })
 
         switch (e.target.id) {
 
@@ -127,12 +129,12 @@ const RecipeEdit = () => {
                 break;
         }
 
-        
+        // console.log(recipe)
         
     }
 
-    const submitEdit = async () => {
-
+    const submitEdit = async (e) => {
+        e.preventDefault()
         let edit = await axios.put(`http://localhost:3001/recipe-detail/${id}`, {
             name: recipe.name,
             description: recipe.description,
@@ -142,7 +144,7 @@ const RecipeEdit = () => {
             ingredients: recipe.ingredients
         })
         console.log(edit)
-        navigate(`/recipe/${id}`, {replace: true})
+        navigate(`/recipe/${id}`)
 
 
     }
@@ -154,7 +156,7 @@ return (
         
             
                 <div className=" middle-container">
-                    <form>
+                    <form onSubmit={submitEdit}>
                     
                     
                         <div className="inner-container">
