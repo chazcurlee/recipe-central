@@ -4,7 +4,7 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 
 
-const RecipeDetail = () => {
+const RecipeEdit = () => {
 
     const [recipe, setRecipe ] = useState([])
     const [chef, setChef] = useState("")
@@ -36,27 +36,11 @@ const RecipeDetail = () => {
 
     }, [])
    
-    const deleteEntry = async () => {
+    
+
+    const editEntry = async () => {
 
         
-        let ans = prompt("Please type in the name of the recipe you are trying to delete.")
-        if (ans === recipe.name) {
-            await navigate('/recipe', {replace: true}, {reloadDocument: true})
-            let dlte = await axios.delete(`/recipe-detail/${id}`)
-            
-
-
-        } 
-        
-        
-
-
-    }
-
-    const editEntry = () => {
-
-        console.log('test edit')
-        navigate(`edit`)
 
 
 
@@ -72,13 +56,13 @@ return (
                     <img className="recipe-img" src={recipe.img} alt="picture of recipe" />
                 
                     <div className="inner-container">
-                        <h2 className="recipe-name">{recipe.name}</h2> 
+                        <input type="text" className="recipe-name" value={recipe.name}></input> 
                         <p className="recipe-info">{recipe.description}</p>
                         <p className="recipe-info">Ingredients: {recipe.ingredients}</p>
                         <p className="recipe-info">Steps: {recipe.steps}</p>
                         <p className="recipe-info">Chef: {chef}</p>
-                        <button onCLick={editEntry}>Edit</button><br />
-                        <button onClick={deleteEntry}>Delete</button>
+                        <button onCLick={editEntry}>Save</button><br />
+                        
                     </div>
                 </div>
 
@@ -102,4 +86,4 @@ return (
 
 }
 
-export default RecipeDetail
+export default RecipeEdit
