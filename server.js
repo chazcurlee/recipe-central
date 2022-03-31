@@ -19,7 +19,7 @@ const { Recipe, Chef } = require('./models')
 
 app.get('/recipe', recipesController.getRecipe)
 app.get('/chef', recipesController.getChef)
-app.get('/spec-chef', recipesController.getSpecChef)
+app.get('/chef/:id', recipesController.getSpecChef)
 app.post('/recipe', recipesController.addRecipe)
 app.get('/recipe-detail/:id', recipesController.getDetailedRecipe)
 app.delete('/recipe-detail/:id', recipesController.deleteRecipe)

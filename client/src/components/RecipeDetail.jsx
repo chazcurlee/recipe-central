@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from 'react'
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 
 const RecipeDetail = (props) => {
@@ -9,6 +9,7 @@ const RecipeDetail = (props) => {
     const [recipe, setRecipe ] = useState([])
     const [chef, setChef] = useState("")
     const { id } = useParams()
+    const navigate = useNavigate()
     
 
     useEffect(() => {
@@ -19,8 +20,9 @@ const RecipeDetail = (props) => {
 
             let recipe = await axios.get(`http://localhost:3001/recipe-detail/${id}`)
             console.log(recipe.data)
-            let chefId = recipe.data.chef[0]
             setRecipe(recipe.data)
+
+            let chefId = recipe.data.chef[0]
             console.log(chefId)
             let specChef = await axios.get(`http://localhost:3001/chef/${chefId}`)
             console.log(specChef)
@@ -34,6 +36,22 @@ const RecipeDetail = (props) => {
 
     }, [])
    
+    const deleteEntry = async () => {
+
+        
+        let ans = prompt("Please type in the name of the recipe you are trying to delete.")
+        if (ans === recipe.name) {
+            await navigate('/recipe', {replace: true}, {reloadDocument: true})
+            let dlte = await axios.delete(`/recipe-detail/${id}`)
+            
+
+
+        } 
+        
+        
+
+
+    }
 
 return (
     <div className="main-content outer-container">
@@ -51,7 +69,7 @@ return (
                         <p className="recipe-info">Steps: {recipe.steps}</p>
                         <p className="recipe-info">Chef: {chef}</p>
                         <button>Edit</button><br />
-                        <button>Delete</button>
+                        <button onClick={deleteEntry}>Delete</button>
                     </div>
                 </div>
 

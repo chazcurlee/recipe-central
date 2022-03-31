@@ -64,8 +64,12 @@ const getDetailedRecipe = async (req, res) => {
 
 const deleteRecipe = async (req, res) => {
 
-    let details = await Recipe.findById(req.params.id)
-    await Recipe.findByIdAndDelete(details._id)
+    
+        await Recipe.findByIdAndDelete(req.params.id)
+        console.log(`Recipe deleted. ID: ${req.params.id}`)
+
+    
+    
 
 }
 
