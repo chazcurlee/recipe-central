@@ -19,21 +19,31 @@ text-decoration: none;
 
 }
 
-a:hover {
-
-  font-size: 20px;
-
-}
-
 a:active {
 
   font-size: 15px;
 
 }
 
+a:hover {
+
+  font-size: 20px;
+
+}
+
+a.nav-butt:hover {
+
+  background-color: #231a31;
+  color: #ffeedf
+
+}
+
+
 .title {
 
   color: #231a31;
+  border: 1px solid #231a31;
+  width: 10vw;
 
 }
 
@@ -59,6 +69,25 @@ a:active {
   
 
 }
+
+.home-pic {
+
+  width: 90vw
+
+}
+
+.home {
+
+  position: relative;
+
+}
+
+.img-text {
+
+  
+
+}
+
 
 .main-content {
 

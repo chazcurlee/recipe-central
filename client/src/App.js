@@ -12,8 +12,10 @@ import RecipeEdit from './components/RecipeEdit';
 function App() {
   return (
     <div className="App">
-
-      <h1 className="title" >Recipe Central</h1>
+      
+      <div>
+        <h1 className="title" >Recipe Central</h1>
+      </div>
 
       <header  >
         <Nav />
