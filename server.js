@@ -19,15 +19,11 @@ const { Recipe, Chef } = require('./models')
 
 app.get('/recipe', recipesController.getRecipe)
 app.get('/chef', recipesController.getChef)
+app.get('/spec-chef', recipesController.getSpecChef)
 app.post('/recipe', recipesController.addRecipe)
-// app.get('/recipes', async (req, res) => {
-
-//     let test = await Recipe.find({category: "Breakfast"})
-//     res.json(test)
-
-// })
-
-app.post('/recipes', recipesController.addRecipe)
+app.get('/recipe-detail/:id', recipesController.getDetailedRecipe)
+app.delete('/recipe-detail/:id', recipesController.deleteRecipe)
+app.post('/recipe', recipesController.addRecipe)
 
 
 

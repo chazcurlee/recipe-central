@@ -16,8 +16,10 @@ const { Chef, Recipe } = require('../models')
 
 const getRecipe = async (req, res) => {
 
-    let test = await Recipe.find({})
+    
 
+    let test = await Recipe.find({})
+    
     res.json(test)
 
 
@@ -27,16 +29,43 @@ const getRecipe = async (req, res) => {
 
 const getChef = async (req, res) => {
 
+    
+
     let chef = await Chef.find({})
     res.json(chef)
 
 } 
 
+const getSpecChef = async (req, res) => {
+
+    console.log(req.params.id)
+    let chef = await Chef.findById(req.params.id)
+    res.json(chef)
+
+}
+
 const addRecipe = async (req, res) => {
 
+    
     let inp = req.body
     Recipe.create(inp)
 
+
+}
+
+const getDetailedRecipe = async (req, res) => {
+
+
+    let details = await Recipe.findById(req.params.id)
+    
+    res.json(details)
+
+}
+
+const deleteRecipe = async (req, res) => {
+
+    let details = await Recipe.findById(req.params.id)
+    await Recipe.findByIdAndDelete(details._id)
 
 }
 
@@ -46,7 +75,10 @@ const addRecipe = async (req, res) => {
 module.exports ={
     getRecipe,
     getChef,
-    addRecipe
+    addRecipe,
+    getDetailedRecipe,
+    deleteRecipe,
+    getSpecChef
 
 
 

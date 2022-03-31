@@ -10,8 +10,9 @@ const Recipes = () => {
     let navigate = useNavigate()
 
     const showDetails = (recipe) => {
+        console.log(recipe)
 
-        navigate(`${recipe.id}`)
+        navigate(`${recipe}`)
 
     }
     
@@ -38,14 +39,14 @@ return (
         <h2>Recipes</h2>
         
             {recipes.map((recipe) => (
-                <div className=" middle-container" onClick={showDetails(recipe)}>
+                <div className=" middle-container" onClick={() => showDetails(recipe._id)}>
                     <img className="recipe-img" src={recipe.img} alt="picture of recipe" />
                 
                     <div className="inner-container">
                         <h2 className="recipe-name">{recipe.name}</h2> 
                         <p className="recipe-info">{recipe.description}</p>
                         <p className="recipe-info">Ingredients: {recipe.ingredients}</p>
-                        <p className="recipe-info">Steps: {recipe.steps}</p>
+                        
                         <p></p>
                     </div>
                 </div>
