@@ -23,7 +23,8 @@ function App() {
       
 
       <main>
-        <Routes>
+        
+        <Routes className="routes">
           <Route path="/" element={<Home />} />
           <Route path="/recipe" element={<Recipes />} />
           <Route path="recipe-entry" element={<Entry />} />
@@ -31,7 +32,9 @@ function App() {
           <Route path="recipe/:id" element={<RecipeDetail />} />
           <Route path="recipe/:id/edit" element={<RecipeEdit />} />
         </Routes>
+        
       </main>
+      
      
     </div>
   );

@@ -127,17 +127,17 @@ return (
     <div className="main-content">
         <h2>Add A New Recipe Here</h2>
         <form id="recipe-form" onSubmit={submitRecipe}>
-            <p>Recipe Name:</p>
+            <p className="entry-indicator">Recipe Name:</p>
             <input type="text" className="recipe-other" placeholder="Recipe Name" id="name" onChange={handleChange}/><br/>
-            <p>Description:</p>
+            <p className="entry-indicator">Description:</p>
             <textarea rows="4" className="recipe-instruc" placeholder="Description" id="description" onChange={handleChange}/><br/>
-            <p>Ingredients:</p>
+            <p className="entry-indicator">Ingredients:</p>
             <textarea rows="4" className="recipe-instruc" placeholder="Ingredients" id="ingredients" onChange={handleChange}/><br/>
-            <p>Instructions:</p>
+            <p className="entry-indicator">Instructions:</p>
             <textarea rows="4" className="recipe-instruc" placeholder="Instructions"id="instructions" onChange={handleChange}/> <br/>
-            <p>Image URL:</p>
+            <p className="entry-indicator">Image URL:</p>
             <input type="text" className="recipe-other" placeholder="Image URL" id="url" onChange={handleChange}/><br/>
-            <p>Chef Name:</p>
+            <p className="entry-indicator">Chef Name:</p>
             <select id="dropdown-chef" onChange={handleChange}>
                 <option>---Choose Whose Recipe This Is---</option>
                 <option>Gordon Ramsey</option>

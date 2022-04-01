@@ -39,6 +39,15 @@ a.nav-butt:hover {
 }
 
 
+main {
+
+  width: auto;
+  
+  
+
+}
+
+
 .title-box {
 
   color: #231a31;
@@ -96,7 +105,8 @@ a.nav-butt:hover {
   background-color: #ffd2ab;
   margin: 20px;
   height: auto;
-  width: 98vw;
+  
+  
 
 
 }
@@ -160,19 +170,60 @@ a.nav-butt:hover {
 
 .recipe-instruc {
 
-  width: 20vw;
+  width: 20em;
   height: 10vh;
   overflow: hidden;
   min-height: 40px;
   line-height: 20px;
+  margin: auto;
 
 }
 
 .recipe-other {
 
-  width: 20vw;
+  width: 20em;
+  margin: auto;
 
 }
+
+.entry-indicator {
+
+  margin: auto;
+
+
+}
+
+.chef {
+
+margin: auto auto 2vh auto;
+padding: 1vh;
+border-bottom: #231a31 double 5px;
+
+}
+
+.chef-info {
+
+  background-color: #fca65a;
+  height: auto;
+  width: 43vw;
+  margin: auto 100vw auto 26vw;
+
+
+}
+
+
+.chef-name {
+
+
+
+}
+
+.chef-history {
+
+width: 43vw;
+
+}
+
 
 
 

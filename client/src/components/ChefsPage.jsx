@@ -25,13 +25,14 @@ const ChefsPage = () => {
 return (
 
     <div className="main-content">
-        <h2>Chefs' Page</h2>
+        <h2 className="main-title">Chefs' Page</h2>
         {chefs.map((ex) => (
-            
-            <div>
+            <div className="chef">
                 <img className="chef-portrait" src={ex.img} alt="chef portrait" />
-                <h3>{ex.name}</h3>
-                <p>{ex.history}</p>
+                <div className="chef-info">
+                    <h3 className="chef-name" >{ex.name}</h3>
+                    <p className="chef-history" >{ex.history}</p>
+                </div>
             </div>
         ))} 
         
