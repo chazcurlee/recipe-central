@@ -4,11 +4,11 @@ By: Chaz Curlee
 *********
 ## Description
 
-![RecipeCentral1](https://imgur.com/7oiLR3u)
+![RecipeCentral1](https://i.imgur.com/XHLCPSY.png)
 
 A sleek, aesthetic web page dedicated to collection and dispursing the best recipes known to humankind. Shows world famous chefs and their related recipes. Open to all and all are welcome to share and edit recipes.  Recipe Central hopes to combat this with its surgical approach to UI/UX.
 
-![RecipeCentral2](https://imgur.com/XHLCPSY)
+![RecipeCentral2](https://i.imgur.com/XHLCPSY.png)
 
 **********
 ## Technologies Used
