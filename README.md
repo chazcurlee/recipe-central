@@ -57,6 +57,8 @@ A sleek, aesthetic web page dedicated to collection and dispursing the best reci
 
     - Nabila Ayaba
 
+    - All Chefs included (Julia Child (RIP), Anthony Bourdain (RIP), Bobby Flay, Gordon Ramsay)
+
     - The Academy
 
     - Will Smith, for giving the world something to talk about this week
