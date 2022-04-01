@@ -4,7 +4,7 @@ By: Chaz Curlee
 *********
 ## Description
 
-A sleek, aesthetic web page dedicated to collection and dispursing the best recipes known to homankind. Open to all and all are welcome to share and edit recipes. The recipes are categorized by Breakfast, Lunch, Dinner, and Snack to allow the user easy access to whatever meal they are looking for. Many recipe websites contain far to much fat and fluff. Recipe Central hopes to combat this with its surgical approach to UI/UX.
+A sleek, aesthetic web page dedicated to collection and dispursing the best recipes known to humankind. Shows world famous chefs and their related recipes. Open to all and all are welcome to share and edit recipes.  Recipe Central hopes to combat this with its surgical approach to UI/UX.
 
 **********
 ## Technologies Used
@@ -30,3 +30,14 @@ A sleek, aesthetic web page dedicated to collection and dispursing the best reci
     - [EDR](https://lucid.app/lucidchart/8644bc08-175f-49b9-8a1e-b9797d6f41c7/edit?invitationId=inv_59db1e33-0375-4e82-b54b-e4c4f7c88cb3)
 
     - [Component Map](https://lucid.app/lucidchart/11e24f02-3c34-46e9-b771-5157e0455beb/edit?invitationId=inv_f2c740e7-fef3-4292-8186-4d3e0df37d02)
+
+    -[Deployed Website](https://powerful-ridge-17729.herokuapp.com/)
+
+    *************
+    ## Future Implementations
+
+    [] - Make Chef Profile page
+
+    [] - Have link from recipe details page to chef's profile page
+
+    [] - Implement a link in Chef's profile page that shows all related recipes
