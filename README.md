@@ -49,3 +49,19 @@ A sleek, aesthetic web page dedicated to collection and dispursing the best reci
     [] - Have link from recipe details page to chef's profile page
 
     [] - Implement a link in Chef's profile page that shows all related recipes
+
+    **************
+    ## Credits
+
+    - Ben Manning 
+
+    - Nabila Ayaba
+
+    - The Academy
+
+    - Will Smith, for giving the world something to talk about this week
+
+    - Spotify, for keeping my ADHD tame
+
+    - The person who invented food - you're a real one.
+
