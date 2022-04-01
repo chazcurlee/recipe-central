@@ -13,8 +13,8 @@ function App() {
   return (
     <div className="App">
       
-      <div>
-        <h1 className="title" >Recipe Central</h1>
+      <div className="title-box">
+        <h1  className="title">Recipe Central</h1>
       </div>
 
       <header  >

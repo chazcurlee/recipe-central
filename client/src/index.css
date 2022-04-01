@@ -39,11 +39,14 @@ a.nav-butt:hover {
 }
 
 
-.title {
+.title-box {
 
   color: #231a31;
-  border: 1px solid #231a31;
-  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  
 
 }
 
@@ -63,12 +66,15 @@ a.nav-butt:hover {
 
 .nav-butt {
 
-  padding: 0px 109px;
+  padding: 0px ;
   margin: 0px;
+  width: 10vw;
   /* border: 1px solid #231a31; */
   
 
 }
+
+
 
 .home-pic {
 
@@ -82,11 +88,7 @@ a.nav-butt:hover {
 
 }
 
-.img-text {
 
-  
-
-}
 
 
 .main-content {
@@ -156,6 +158,21 @@ a.nav-butt:hover {
 
 }
 
+.recipe-instruc {
+
+  width: 20vw;
+  height: 10vh;
+  overflow: hidden;
+  min-height: 40px;
+  line-height: 20px;
+
+}
+
+.recipe-other {
+
+  width: 20vw;
+
+}
 
 
 

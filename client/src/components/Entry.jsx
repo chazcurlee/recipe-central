@@ -127,12 +127,17 @@ return (
     <div className="main-content">
         <h2>Add A New Recipe Here</h2>
         <form id="recipe-form" onSubmit={submitRecipe}>
-            <input type="text" placeholder="Recipe Name" id="name" onChange={handleChange}/><br/>
-            <input type="text" placeholder="Description" id="description" onChange={handleChange}/><br/>
-            <input type="text" placeholder="Ingredients" id="ingredients" onChange={handleChange}/><br/>
-            <input type="text" placeholder="Instructions"id="instructions" onChange={handleChange}/> <br/>
-            
-            <input type="text" placeholder="Image URL" id="url" onChange={handleChange}/><br/>
+            <p>Recipe Name:</p>
+            <input type="text" className="recipe-other" placeholder="Recipe Name" id="name" onChange={handleChange}/><br/>
+            <p>Description:</p>
+            <textarea rows="4" className="recipe-instruc" placeholder="Description" id="description" onChange={handleChange}/><br/>
+            <p>Ingredients:</p>
+            <textarea rows="4" className="recipe-instruc" placeholder="Ingredients" id="ingredients" onChange={handleChange}/><br/>
+            <p>Instructions:</p>
+            <textarea rows="4" className="recipe-instruc" placeholder="Instructions"id="instructions" onChange={handleChange}/> <br/>
+            <p>Image URL:</p>
+            <input type="text" className="recipe-other" placeholder="Image URL" id="url" onChange={handleChange}/><br/>
+            <p>Chef Name:</p>
             <select id="dropdown-chef" onChange={handleChange}>
                 <option>---Choose Whose Recipe This Is---</option>
                 <option>Gordon Ramsey</option>

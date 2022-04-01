@@ -86,7 +86,7 @@ const RecipeEdit = () => {
                     
             case "dropdown-chef1":
                 switch (update) {
-                    case "Gordon Ramsey":
+                    case "Gordon Ramsay":
                         setRecipe({
                             ...recipe,
                             chef: "6244578a1f15f32c6e1f29e0",
