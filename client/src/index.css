@@ -66,7 +66,17 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.chiropracticmoves.com.au%2Fwp-content%2Fuploads%2F2019%2F12%2FJunk-food.jpg&f=1&nofb=1");
   
+
+}
+
+.title {
+
+  background-color: #ffeedf;
+  padding: 1em 1em 1em 1em;
+  border:#231a31 3px solid; 
+  text-decoration: underline;
 
 }
 
