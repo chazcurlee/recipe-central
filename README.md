@@ -15,6 +15,18 @@ A sleek, aesthetic web page dedicated to collection and dispursing the best reci
 ![RecipeCentral2](https://i.imgur.com/XHLCPSY.png)
 
 **********
+## Getting Started
+
+- Navigate to the Recipes Entry page.
+
+- Enter in the relevant information for the recipe along with the image url
+
+- Navigate to the recipes page to see your new recipe!
+
+- Delete or edit should you need by clicking on the recipe entry, then clicking the relevant button.
+
+
+****************
 ## Technologies Used
 
  - MongoDB 
