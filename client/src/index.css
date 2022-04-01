@@ -39,12 +39,23 @@ a.nav-butt:hover {
 }
 
 
+
+
 main {
 
   width: auto;
   
   
 
+}
+
+.main-title {
+
+
+  border-bottom: #231a31 double 3px;
+  width: auto;
+  
+  
 }
 
 
@@ -85,17 +96,6 @@ main {
 
 
 
-.home-pic {
-
-  width: 90vw
-
-}
-
-.home {
-
-  position: relative;
-
-}
 
 
 
@@ -105,6 +105,10 @@ main {
   background-color: #ffd2ab;
   margin: 20px;
   height: auto;
+  border-top: #231a31 double 3px;
+  border-bottom: #231a31 double 3px;
+  border-left: #231a31 dashed 1px;
+  border-right: #231a31 dashed 1px;
   
   
 
@@ -126,7 +130,7 @@ main {
   grid-row: auto /span 1;
   margin: 20px;
   border: 1px solid #5d5d5a;
-  padding: 10px;
+  padding: 0px;
   background-color: #fffdfb;
   color: #231a31;
   
@@ -144,12 +148,37 @@ main {
 
 }
 
+
+.home-pic {
+
+  width: 90vw;
+  border: #231a31 solid 1px;;
+
+}
+
+.home {
+
+  position: relative;
+
+}
+
+
+
+
+
+.recipe-name {
+
+  text-decoration: underline ;
+
+}
+
 .recipe-img {
 
   grid-column: 1 / span 1;
   width: 20em;
-  height: 20em;
-  border: 1px solid #9b9cff;
+  height: auto;
+  border: 1px solid #231a31;
+  margin: 2vh 1vw 1vh 2vw;
 
 }
 
@@ -158,13 +187,6 @@ main {
   border-top: 1px solid #5d5d5a;
   padding: 15px;
   margin: 0px;
-
-}
-
-.chef-portrait {
-
-  width: 30vw;
-  height: 50vh;
 
 }
 
@@ -186,12 +208,18 @@ main {
 
 }
 
+
+
+
 .entry-indicator {
 
   margin: auto;
 
 
 }
+
+
+
 
 .chef {
 
@@ -201,28 +229,37 @@ border-bottom: #231a31 double 5px;
 
 }
 
+
+
+.chef-portrait {
+
+  width: 30vw;
+  height: auto;
+  border: #231a31 dashed 3px;
+  border-radius: 25em;
+
+}
+
 .chef-info {
 
   background-color: #fca65a;
   height: auto;
   width: 43vw;
   margin: auto 100vw auto 26vw;
+  border: 1px black solid;
+  border-radius: 3em;
 
 
 }
 
-
-.chef-name {
-
-
-
-}
 
 .chef-history {
 
 width: 43vw;
 
 }
+
+
 
 
 

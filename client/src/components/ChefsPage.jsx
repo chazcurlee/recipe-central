@@ -28,9 +28,11 @@ return (
         <h2 className="main-title">Chefs' Page</h2>
         {chefs.map((ex) => (
             <div className="chef">
+                <div className="chef-port-container">
                 <img className="chef-portrait" src={ex.img} alt="chef portrait" />
+                </div>
                 <div className="chef-info">
-                    <h3 className="chef-name" >{ex.name}</h3>
+                    <h3  >{ex.name}</h3>
                     <p className="chef-history" >{ex.history}</p>
                 </div>
             </div>

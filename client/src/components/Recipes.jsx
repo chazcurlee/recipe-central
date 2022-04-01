@@ -52,7 +52,7 @@ const Recipes = () => {
 return (
     <div className="main-content outer-container">
 
-        <h2>Recipes</h2>
+        <h2 className="main-title">Recipes</h2>
         
             {recipes.map((recipe) => (
                 <div className=" middle-container" onClick={() => showDetails(recipe._id)}>
@@ -61,7 +61,7 @@ return (
                     <div className="inner-container">
                         <h2 className="recipe-name">{recipe.name}</h2> 
                         <p className="recipe-info">{recipe.description}</p>
-                        <p className="recipe-info">Ingredients: {recipe.ingredients}</p>
+                        <p className="recipe-info">Ingredients: <br/>{recipe.ingredients}</p>
                         
                         <p></p>
                     </div>
