@@ -125,26 +125,27 @@ const Entry = () => {
 
 return (
     <div className="main-content">
-        <h2>Add A New Recipe Here</h2>
+        <h2 className="main-title">Add A New Recipe Here</h2>
         <form id="recipe-form" onSubmit={submitRecipe}>
-            <p className="entry-indicator">Recipe Name:</p>
-            <input type="text" className="recipe-other" placeholder="Recipe Name" id="name" onChange={handleChange}/><br/>
-            <p className="entry-indicator">Description:</p>
-            <textarea rows="4" className="recipe-instruc" placeholder="Description" id="description" onChange={handleChange}/><br/>
-            <p className="entry-indicator">Ingredients:</p>
-            <textarea rows="4" className="recipe-instruc" placeholder="Ingredients" id="ingredients" onChange={handleChange}/><br/>
-            <p className="entry-indicator">Instructions:</p>
-            <textarea rows="4" className="recipe-instruc" placeholder="Instructions"id="instructions" onChange={handleChange}/> <br/>
-            <p className="entry-indicator">Image URL:</p>
-            <input type="text" className="recipe-other" placeholder="Image URL" id="url" onChange={handleChange}/><br/>
-            <p className="entry-indicator">Chef Name:</p>
-            <select id="dropdown-chef" onChange={handleChange}>
+
+            <p className="entry-indicator">Recipe Name: <input type="text" className="recipe-other" placeholder="Recipe Name" id="name" onChange={handleChange}/></p><br />
+            
+            <p className="entry-indicator">Description: <textarea rows="4" className="recipe-instruc" placeholder="Description" id="description" onChange={handleChange}/></p>
+            <br/>
+            <p className="entry-indicator">Ingredients: <textarea rows="4" className="recipe-instruc" placeholder="Ingredients" id="ingredients" onChange={handleChange}/></p>
+            <br/>
+            <p className="entry-indicator">Instructions: <textarea rows="4" className="recipe-instruc" placeholder="Instructions"id="instructions" onChange={handleChange}/></p>
+             <br/>
+            <p className="entry-indicator">Image URL: <input type="text" className="recipe-other" placeholder="Image URL" id="url" onChange={handleChange}/></p>
+            <br/>
+            <p className="entry-indicator">Chef Name: <select id="dropdown-chef" onChange={handleChange}>
                 <option>---Choose Whose Recipe This Is---</option>
                 <option>Gordon Ramsey</option>
                 <option>Anthony Bourdain</option>
                 <option>Julia Child</option>
                 <option>Bobby Flay</option>
-            </select><br/>
+            </select></p>
+            
             
             <input type="submit"/>
 
