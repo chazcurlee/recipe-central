@@ -68,7 +68,7 @@ const RecipeDetail = () => {
 return (
     <div className="main-content outer-container">
 
-        <h2>Recipe Detail</h2>
+        <h2 className="main-title">Recipe Detail</h2>
         
             
                 <div className=" middle-container">
@@ -77,9 +77,9 @@ return (
                     <div className="inner-container">
                         <h2 className="recipe-name">{recipe.name}</h2> 
                         <p className="recipe-info">{recipe.description}</p>
-                        <p className="recipe-info">Ingredients: {recipe.ingredients}</p>
-                        <p className="recipe-info">Steps: {recipe.steps}</p>
-                        <p className="recipe-info">Chef: {chef}</p>
+                        <p className="recipe-info">Ingredients: <br />{recipe.ingredients}</p>
+                        <p className="recipe-info">Steps: <br />{recipe.steps}</p>
+                        <p className="recipe-info">Chef: <br />{chef}</p>
                         <button onClick={editEntry}>Edit</button><br />
                         <button onClick={deleteEntry}>Delete</button>
                     </div>

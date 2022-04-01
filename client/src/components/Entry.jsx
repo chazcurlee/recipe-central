@@ -126,6 +126,7 @@ const Entry = () => {
 return (
     <div className="main-content">
         <h2 className="main-title">Add A New Recipe Here</h2>
+
         <form id="recipe-form" onSubmit={submitRecipe}>
 
             <p className="entry-indicator">Recipe Name: <input type="text" className="recipe-other" placeholder="Recipe Name" id="name" onChange={handleChange}/></p><br />
