@@ -80,6 +80,7 @@ main {
   border:#231a31 3px solid; 
   text-decoration: underline;
   background-image: radial-gradient(#ffeedf, #ffd2ab);
+  border-radius: 1em;
 
 }
 
@@ -122,6 +123,7 @@ main {
   border-bottom: #231a31 double 3px;
   border-left: #231a31 dashed 1px;
   border-right: #231a31 dashed 1px;
+  border-radius: 1em;
   
   
 
@@ -146,6 +148,7 @@ main {
   padding: 0px;
   background-color: #fffdfb;
   color: #231a31;
+  border-radius: 1em;
   
 
 
