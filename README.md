@@ -31,7 +31,7 @@ A sleek, aesthetic web page dedicated to collection and dispursing the best reci
 
     - [Component Map](https://lucid.app/lucidchart/11e24f02-3c34-46e9-b771-5157e0455beb/edit?invitationId=inv_f2c740e7-fef3-4292-8186-4d3e0df37d02)
 
-    -[Deployed Website](https://powerful-ridge-17729.herokuapp.com/)
+    - [Deployed Website](https://powerful-ridge-17729.herokuapp.com/)
 
     *************
     ## Future Implementations
