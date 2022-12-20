@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 
+
 const Recipes = () => {
 
     const [recipes, setRecipes ] = useState([])
@@ -59,9 +60,11 @@ return (
                     <img className="recipe-img" src={recipe.img} alt="picture of recipe" />
                 
                     <div className="inner-container">
+                        
                         <h2 className="recipe-name">{recipe.name}</h2> 
                         <p className="recipe-info">{recipe.description}</p>
                         <p className="recipe-info">Ingredients: <br/>{recipe.ingredients}</p>
+                        
                         
                         <p></p>
                     </div>
